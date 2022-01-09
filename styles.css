@@ -1,0 +1,197 @@
+:root {
+    --white-color: #F1F1F2;
+    --black-color: #08081a;
+    --mite-color: #72b9b6;
+    --dark-mite-color: #145e58;
+    --dark-blue-color: #031163;
+    --ocean-blue-color: #02423f;
+    --ocean-dark-color: #010914;
+
+}
+
+body {
+    background-color: var(--black-color);
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+}
+
+.big_box {
+    background-color: var(--ocean-blue-color);
+    color: var(--white-color);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.little_box {
+    background-color: var(--mite-color);
+    color: var(--ocean-dark-color);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.title_box {
+    background-color: var(--dark-mite-color);
+    color: var(--white-color);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.columns {
+    display: flex;
+}
+
+.columns_center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.columns_between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columns_around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.columns_left {
+    display: flex;
+    justify-content: left;
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+}
+
+.img_frame {
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    margin: 10px;
+}
+
+.txt_frame {
+    width: 45%;
+    max-width: 600px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.little_txt_frame {
+    width: 100%;
+    max-width: 500px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.title_frame {
+    background-color: var(--android-background-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+img {
+    min-width: 300px;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.link_dark {
+    color: var(--android-black-color);
+    text-decoration: none;
+}
+
+.link_bright {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.bright_link_frame {
+    margin-top: 15px;
+    margin-left: 10px;
+    height: 50px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.tablet {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--dark-mite-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.little_content {
+    min-width: 200px;
+    max-width: 500px;
+}
+
+.contacts {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 100px;
+}
+
+.email-icon {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    color: var(--android-white-color);
+    background: url('Assets/icon-email.svg');
+    background-size: contain;
+    align-self: center;
+}
+
+.telegram-icon {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background: url('Assets/icon-telegram.svg');
+    background-size: contain;
+    align-self: center;
+}
+
+.github-icon {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background: url('Assets/icon-github.svg');
+    background-size: contain;
+    align-self: center;
+}
+
+.contacts {
+    margin-top: 25px;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_info {
+    margin-left: 10px;
+}
+
+.avatar {
+    min-width: 100px;
+    max-width: 300px;
+    border-radius: 50%;
+}
