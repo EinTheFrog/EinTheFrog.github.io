@@ -1,240 +1,146 @@
 :root {
-    --white-color: #F1F1F2;
-    --black-color: #08081a;
-    --mite-color: #72b9b6;
-    --dark-mite-color: #145e58;
-    --dark-blue-color: #031163;
-    --ocean-blue-color: #02423f;
-    --ocean-dark-color: #010914;
+    --primary: #4C007D;
+    --primary-light: #E0B6FF;
+    --seocondary: #372C3F;
+    --secondary-light: #D1C1D9;
+    --tertiary: #4C2529;
+    --tertiary-light: #F4B7BB;
+    --background: #1D1B1E;
+    --on-background: #E7E1E5;
+}
 
+@font-face {
+    font-family: "Inter";
+    src: url("./Assets/Inter/static/Inter-ExtraLight.ttf");
 }
 
 body {
-    background-color: var(--black-color);
-    font-family: Roboto, sans-serif;
-    font-size: 18px;
+    background-color: var(--background);
 }
 
-.big_box {
-    background-color: var(--ocean-blue-color);
-    color: var(--white-color);
-    margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
+h1 {
+    color: var(--on-background);
+    font-size: 48px;
+    font-family: "Inter";
+
+    margin-top: 16px;
+    margin-bottom: 0px;
 }
 
-.little_box {
-    background-color: var(--mite-color);
-    color: var(--ocean-dark-color);
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
+h2 {
+    color: var(--on-background);
+    font-size: 36px;
+    font-family: "Inter";
+
+    margin-top: 16px;
+    margin-bottom: 0px;
 }
 
-.title_box {
-    background-color: var(--dark-mite-color);
-    color: var(--white-color);
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
+h3 {
+    color: var(--on-background);
+    font-size: 30px;
+    font-family: "Inter";
+    
+    margin-top: 24px;
+    margin-bottom: 0px;
 }
 
-
-.columns {
-    display: flex;
+p {
+    color: var(--on-background);
+    font-size: 20px;
+    font-family: "Inter";
 }
 
-.columns_center {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.columns_between {
-    display: flex;
-    justify-content: space-between;
-}
-
-.columns_around {
-    display: flex;
-    justify-content: space-around;
-}
-
-.columns_left {
-    display: flex;
-    justify-content: left;
-}
-
-.rows {
-    display: flex;
-    flex-direction: column;
-}
-
-.img_frame {
-    width: 50%;
-    max-width: 600px;
-    height: auto;
-    margin: 10px;
-}
-
-.txt_frame {
-    width: 45%;
-    max-width: 600px;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-.little_txt_frame {
-    width: 100%;
-    max-width: 500px;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-.title_frame {
-    background-color: var(--android-background-color);
-    padding: 10px;
-    border-radius: 10px;
-}
-
-img {
-    min-width: 300px;
-    width: 100%;
-    max-width: 600px;
-    height: 100%;
-
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-.link_dark {
-    color: var(--android-black-color);
-    text-decoration: none;
-}
-
-.link_bright {
-    color: var(--white-color);
-    text-decoration: none;
-}
-
-.bright_link_frame {
-    margin-top: 15px;
-    margin-left: 10px;
-    height: 50px;
-    line-height: 35px;
-    text-align: center;
-}
-
-.tablet {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: var(--dark-mite-color);
-    color: var(--white-color);
-    padding: 10px 20px;
-    border-radius: 4px;
-    margin-right: 5px;
-    margin-top: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.little_content {
-    min-width: 200px;
-    max-width: 500px;
-}
-
-.contacts {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 100px;
-}
-
-.email-icon {
-    display: inline-block;
-    height: 35px;
-    width: 35px;
-    color: var(--android-white-color);
-    background: url('Assets/icon-email.svg');
-    background-size: contain;
-    align-self: center;
-}
-
-.telegram-icon {
-    display: inline-block;
-    height: 35px;
-    width: 35px;
-    background: url('Assets/icon-telegram.svg');
-    background-size: contain;
-    align-self: center;
-}
-
-.github-icon {
-    display: inline-block;
-    height: 35px;
-    width: 35px;
-    background: url('Assets/icon-github.svg');
-    background-size: contain;
-    align-self: center;
-}
-
-.github-dark-icon {
-    display: inline-block;
-    height: 35px;
-    width: 35px;
-    background: url('Assets/icon-github-dark.svg');
-    background-size: contain;
-    align-self: center;
-}
-
-.download-pdf-icon {
-    display: inline-block;
-    height: 35px;
-    width: 35px;
-    color: var(--android-black-color);
-    background: url('Assets/icon-download-file.svg');
-    background-size: contain;
-    align-self: center;
-}
-
-.controller-icon {
-    display: inline-block;
-    height: 35px;
-    width: 35px;
-    background: url('Assets/icon-controller.svg');
-    background-size: contain;
-    align-self: center;
-}
-
-.contacts {
-    margin-top: 25px;
-    margin-left: 20%;
-    display: flex;
-    flex-direction: column;
-}
-
-.main_info {
-    margin-left: 10px;
-}
-
-.avatar {
-    min-width: 100px;
-    max-width: 200px;
-
-    min-height: 100px;
-    max-height: 200px;
-    border-radius: 50%;
+a {
+    color: var(--on-background);
+    font-size: 20;
+    font-family: "Inter";
 }
 
 a:hover {
-    color: var(--white-color);
+    color: var(--primary-light);
 }
 
-.link_bright:hover {
-    color: var(--ocean-dark-color);
+.canvas {
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-color: var(--on-background);
+    border-style: solid;
 }
 
-.link_dark:hover {
-    color: var(--white-color);
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+}
+
+.double_column {
+    flex: 2;
+}
+
+.column_space {
+    flex: 0.1
+}
+
+.vert_centralized_block {
+    display: grid;
+    align-items: center;
+}
+
+.avatar {
+    margin-left: auto;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-bottom: 8px;
+    border-radius: 50%;
+}
+
+.icon {
+    margin-left: 16px;
+    margin-top: 8px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+}
+
+.skill {
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    border-radius: 16px;
+
+    text-align: center;
+
+    background-image: linear-gradient(var(--primary), var(--seocondary));
+}
+
+.skill_secondary {
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    border-radius: 16px;
+
+    text-align: center;
+
+    background-image: linear-gradient(var(--seocondary), var(--background));
+}
+
+h2.project_title {
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+
+.transparent {
+    opacity: 0.5;
 }
