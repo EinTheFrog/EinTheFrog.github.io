@@ -57,14 +57,31 @@ a {
     font-family: "Inter";
 }
 
+span {
+    color: var(--on-background);
+    font-size: 20px;
+    font-family: "Inter";
+    opacity: 0.5;
+}
+
+ul {
+    color: var(--on-background);
+}
+
 a:hover {
     color: var(--primary-light);
 }
 
 .canvas {
     width: 1400px;
+
     margin-left: auto;
     margin-right: auto;
+
+    padding-left: 36px;
+    padding-top: 16px;
+    padding-right: 36px;
+    padding-bottom: 16px;
     
     border-color: var(--on-background);
     border-style: solid;
@@ -83,7 +100,7 @@ a:hover {
 }
 
 .column_space {
-    flex: 0.1
+    flex: 0.1;
 }
 
 .vert_centralized_block {
@@ -91,16 +108,18 @@ a:hover {
     align-items: center;
 }
 
+.centralized_image {
+    text-align: center;
+}
+
 .avatar {
-    margin-left: auto;
     margin-top: 16px;
-    margin-right: auto;
     margin-bottom: 8px;
+
     border-radius: 50%;
 }
 
 .icon {
-    margin-left: 16px;
     margin-top: 8px;
     margin-right: 16px;
     margin-bottom: 8px;
@@ -137,8 +156,23 @@ a:hover {
 }
 
 h2.project_title {
-    margin-left: 16px;
     margin-bottom: 16px;
+
+    width: 300px;
+    height: auto;
+}
+
+.screenshot {
+    width: 294px;
+    height: 563px;
+    border-radius: 40px;
+}
+
+.feature_gif {
+    flex: 1;
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
 }
 
 .transparent {
